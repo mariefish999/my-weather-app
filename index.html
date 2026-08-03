@@ -5,86 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advancedwk2homework</title>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-        .current-weather-container {
-            max-width: 600px;
-            margin: 0 auto; 
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .input {
-            display:flex;
-            justify-content: center;
-            width: 500px;
-            background: #F9F7FE;
-            padding: 20px;
-        }
-        .input .city-input {
-            width: 80%;
-        }
-        .search-button {
-    font-size: 16px;
-    background-color: #885df1;
-    color: white;
-    padding: 10px;
-    border: none;
-    line-height: 1;
-    border-radius: 5px;
-        }
-
-    .current-city h1 {
-        display: flex;
-        justify-content:space-between;
-        font-family: Roboto, sans-serif;
-        font-size: 38px;
-        font-weight: 800;
-    }
-
-    .current-weather {
-        position: relative;
-        margin-top: -100px;
-        margin-left: 400px;
-        font-family: Roboto, sans-serif;
-    }
-
-    .current-temperature-icon {
-        font-size: 40px;
-    }
-
-    .current-temperature-value {
-        font-size: 80px;
-    }
-
-    .current-temperature-unit {
-        margin-top: -500px;
-        font-size: 20px;
-    }
-
-    .humidity {
-        color: red;
-    }
-
-    .speed {
-        color: red;
-    }
-
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-    <main>
     <div class="current-weather-container">
+    <header>
         <form id="search-form">
             <input
                 type="text" class="city-input" placeholder="Enter a city" required> 
                 <input type="submit" value="Search" class="search-button">
-        </div>
         </form>
-    <br/>
-    <br/>
+        </header>
+    <main>
     <div class="current-city">
         <h1 id="city">Paris</h1>
         <p id="current-day"> Monday 13.06, cloudy <br/> Humidity: <strong class="humidity">87%</strong>, Wind: <strong class="speed">7.2Km/h </strong> 
@@ -100,14 +32,11 @@
             oC
         </span>
     </div>
-    <footer><p>This project was coded by
-        <a href="https://github.com/mariefish999" target ="blank" >Marie Fisher</a> and is on <a href="https://github.com/mariefish999/my-weather-app" target ="blank">Github</a> and hosted on <a href="https://app.netlify.com/projects/lambent-pothos-2d57f8" target="blank"> Netlify</a></p></footer>
-    </div>
-    </div>
-   
     </main>
-
+    <footer><p>This project was coded by
+        <a href="https://github.com/mariefish999" target ="blank">Marie Fisher</a> and is on <a href="https://github.com/mariefish999/my-weather-app" target ="blank">Github</a> and hosted on <a href="https://lambent-pothos-2d57f8.netlify.app/" target="blank">Netlify</a></p>
+    </footer>
+    </div>
+    </body>
     <script src ="jscript.js"></script>
-    
-</body>
 </html>

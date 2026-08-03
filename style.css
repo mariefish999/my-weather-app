@@ -1,3 +1,66 @@
-h1 {
-  text-decoration: underline;
-}
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+        .current-weather-container {
+            max-width: 600px;
+            margin: 0 auto; 
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .input {
+            display:flex;
+            justify-content: center;
+            width: 500px;
+            background: #F9F7FE;
+            padding: 20px;
+        }
+        .input .city-input {
+            width: 80%;
+        }
+        .search-button {
+    font-size: 16px;
+    background-color: #885df1;
+    color: white;
+    padding: 10px;
+    border: none;
+    line-height: 1;
+    border-radius: 5px;
+        }
+
+    .current-city h1 {
+        display: flex;
+        justify-content:space-between;
+        font-family: Roboto, sans-serif;
+        font-size: 38px;
+        font-weight: 800;
+    }
+
+    .current-weather {
+        position: relative;
+        margin-top: -100px;
+        margin-left: 400px;
+        font-family: Roboto, sans-serif;
+    }
+
+    .current-temperature-icon {
+        font-size: 40px;
+    }
+
+    .current-temperature-value {
+        font-size: 80px;
+    }
+
+    .current-temperature-unit {
+        margin-top: -500px;
+        font-size: 20px;
+    }
+
+    .humidity {
+        color: red;
+    }
+
+    .speed {
+        color: red;
+    }
+
+    </style>
